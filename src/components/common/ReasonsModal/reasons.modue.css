@@ -1,0 +1,35 @@
+/* .login_wrapper {
+  @apply w-full h-auto py-0 sm:py-10 bg-[url('/icons/loginbg.svg')];
+
+  & > .inner_wrapper {
+    @apply max-w-4xl mx-auto items-center grid grid-cols-12;
+
+    & > .boy_image {
+      @apply relative z-10 row-start-1 col-start-1 col-end-5 aspect-3/4 hidden md:grid;
+    } 
+  }
+}*/
+
+.login_container {
+  @apply w-full rounded-3xl px-2 sm:px-10 sm:py-10 py-10  row-start-1 md:col-end-10 col-start-1 col-end-13 bg-white;
+
+  & > .extrabold {
+    @apply font-extrabold;
+  }
+
+  & > .login_subtitle {
+    @apply flex items-center pb-5 gap-2;
+  }
+
+  & > .loginwith_container {
+    @apply flex my-5 relative justify-center items-center flex-row;
+  }
+
+  & > .media_icon {
+    @apply flex flex-col sm:flex-row justify-center gap-4;
+  }
+}
+/* 
+  & > .girl_image {
+    @apply relative z-10 row-start-1 aspect-3/4 col-start-9 col-end-13 hidden md:grid;
+  } */

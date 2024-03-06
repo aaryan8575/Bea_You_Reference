@@ -1,0 +1,7 @@
+.contactDetails {
+  @apply flex flex-1 gap-4 items-start;
+
+  & .description {
+    @apply text-caption1 mt-1;
+  }
+}

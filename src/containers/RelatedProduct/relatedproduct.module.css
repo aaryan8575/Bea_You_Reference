@@ -1,0 +1,19 @@
+.section {
+  @apply relative flex flex-col gap-4 mt-10;
+
+  & > .title {
+    @apply text-center sm:mt-0;
+  }
+
+  & > .slider {
+    @apply relative;
+  }
+}
+
+.snap_x_slider {
+  @apply overflow-x-scroll w-full h-auto flex snap-x snap-mandatory snap-always py-2 gap-4 sm:gap-6;
+}
+
+.span_x_slide {
+  @apply grow shrink-0 basis-[50%] sm:basis-[30%] xl:basis-[20%] snap-x snap-center h-full;
+}

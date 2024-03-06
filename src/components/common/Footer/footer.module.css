@@ -1,0 +1,39 @@
+.footerWrapper {
+  @apply bg-white relative max-md:mt-20 mt-40 pt-20;
+
+  & .footerImageWrapper {
+    @apply absolute right-0 top-0 min-w-[150px] w-[30%] max-w-[250px] aspect-square -translate-y-[40%] -translate-x-[10%];
+  }
+
+  & > .footer {
+    @apply py-10 flex flex-col gap-2;
+
+    & > .heading {
+      @apply text-green font-semibold text-heading4;
+    }
+
+    & > .footerDataWrapper {
+      @apply grid lg:grid-cols-[30%_1fr] gap-8 mb-10;
+
+      & > .descriptionWrapper {
+        @apply flex flex-col gap-4;
+
+        & > .description {
+          @apply text-caption1 text-gray;
+        }
+      }
+
+      & > .footerLinks {
+        @apply grid grid-cols-2 md:grid-cols-3 gap-4 gap-y-10;
+
+        & > .footerLinkSection {
+          @apply flex flex-col gap-4;
+
+          & > .link {
+            @apply hover:text-gray/70 duration-300;
+          }
+        }
+      }
+    }
+  }
+}

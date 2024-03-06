@@ -1,0 +1,8 @@
+.title {
+  @apply text-heading4 py-2;
+}
+.description {
+  & > * {
+    @apply text-body2 text-gray mb-4;
+  }
+}

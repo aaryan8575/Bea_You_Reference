@@ -1,0 +1,11 @@
+.container {
+  @apply flex flex-col gap-8;
+  .title {
+    @apply font-bold text-heading6 py-2;
+  }
+  & > .description {
+    & > * {
+      @apply text-caption1;
+    }
+  }
+}
